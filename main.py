@@ -39,12 +39,12 @@ while True:
     floor.draw_to_screen(screen_obj=screen,\
                         vertical_pos=200,\
                         screen_width=screen_width,\
-                        speed=6)
+                        speed=3)
 
 
     # window update
     pygame.display.update()
-    clock.tick(60)
+    clock.tick(120)
 
 
 

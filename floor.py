@@ -18,9 +18,10 @@ class Floor():
 
 
     # this will draw a scrolling floor
-    def draw_to_screen(self, screen_obj,vertical_pos, screen_width, speed):
-        if self.x_pos < screen_width * -1:
-            self.x_pos = 0
+    def draw_to_screen(self, screen_obj,vertical_pos, screen_width, speed):  
         self.x_pos -= speed
         screen_obj.blit(self.image,(self.x_pos, vertical_pos))
         screen_obj.blit(self.image,(screen_width + self.x_pos, vertical_pos))
+
+        if self.x_pos < screen_width * -1:
+            self.x_pos = 0
